@@ -1,9 +1,10 @@
 <template>
-  <div class="stats">
+  <div class="news">
 
         <fd-alert dismissible>
           Happy building! 🚀
         </fd-alert>
+
   </div>
 </template>
 
@@ -12,7 +13,7 @@
   import axios from 'axios';
 
   @Component
-  export default class Stats extends Vue {
+  export default class News extends Vue {
 
 
     /*mounted () {

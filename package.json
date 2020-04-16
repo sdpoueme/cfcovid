@@ -10,6 +10,7 @@
   "dependencies": {
     "@mdi/font": "^3.6.95",
     "@sap-theming/theming-base-content": "^11.1.18",
+    "@what3words/api": "^3.1.0",
     "axios": "^0.19.2",
     "core-js": "^2.6.11",
     "fiori-fundamentals": "^1.7.5",
@@ -25,6 +26,7 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vue": "^2.6.11",
+    "vue-browser-geolocation": "^1.8.0",
     "vue-class-component": "^7.2.3",
     "vue-observe-visibility": "^0.4.4",
     "vue-property-decorator": "^8.4.1",

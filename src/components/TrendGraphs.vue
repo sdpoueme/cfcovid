@@ -1,6 +1,5 @@
 <template>
-  <div class="stats">
-
+  <div class="trends">
         <fd-alert dismissible>
           Happy building! 🚀
         </fd-alert>
@@ -12,8 +11,7 @@
   import axios from 'axios';
 
   @Component
-  export default class Stats extends Vue {
-
+  export default class TrendGraphs extends Vue {
 
     /*mounted () {
 

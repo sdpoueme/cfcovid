@@ -5,6 +5,7 @@ import store from "./store";
 import "./registerServiceWorker";
 import "./plugins/vuesax.js";
 import "./plugins/fundamental-vue.js";
+//import VueGeolocation from 'vue-browser-geolocation';
 
 Vue.config.productionTip = false;
 

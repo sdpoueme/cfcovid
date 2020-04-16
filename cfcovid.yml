@@ -16,13 +16,13 @@ spec:
     app: cfcovid
   type: LoadBalancer
 ---
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
     app: cfcovid
   name: cfcovid
-  namespace: solinas
+  namespace: cfcovid
 spec:
   replicas: 2
   selector:
