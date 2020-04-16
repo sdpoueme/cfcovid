@@ -1,5 +1,29 @@
 # cfcovid
-Code repository for http://cameroon-fights.covid.org - a public information page to help citizens of cameroon figthing covid19
 
-# sketch
-https://projects.invisionapp.com/freehand/document/qA7X5Dph6
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
