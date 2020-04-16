@@ -1,0 +1,2 @@
+# cfcovid
+cameroon-fights-covid
