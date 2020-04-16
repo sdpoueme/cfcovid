@@ -1,0 +1,6 @@
+// If you are targeting IE 11 uncomment the following line.
+// $fd-support-css-var-fallback: true;
+
+$fd-icons-path : "./../public/assets/fundamental-styles/icons/";
+$fd-scss-font-path : "./../node_modules/fundamental-styles/dist/fonts/";
+@import "./../node_modules/fundamental-styles/dist/fundamental-styles";
