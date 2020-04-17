@@ -5,7 +5,7 @@
       <h2> Confirmed Cases  <fd-badge filled type="warning"> {{ current_confirmed }} </fd-badge> </h2>
       <h2> Total Deaths  <fd-badge filled type="error"> {{ current_deaths }} </fd-badge> </h2>
       <h2> Total Recovered  <fd-badge filled type="success"> {{ current_recovered }} </fd-badge> </h2>
-      <h2> Total Currently Testing  <fd-badge filled> {{ current_testing }} </fd-badge> </h2>
+      <h2> Total Tests Performed  <fd-badge filled> {{ current_testing }} </fd-badge> </h2>
       * Source Data from <fd-link href="https://github.com/CSSEGISandData/COVID-19">Novel Coronavirus (COVID-19) Cases / JHU CSSE</fd-link> - {{ stat_day }} daily report
 
   </div>

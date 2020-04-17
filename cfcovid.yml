@@ -37,7 +37,7 @@ spec:
         - env:
           image: >-
             sergepoueme/cfcovid:latest
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           name: cfcovid
           ports:
             - containerPort: 8080
