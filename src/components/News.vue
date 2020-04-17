@@ -1,8 +1,8 @@
 <template>
-  <div class="news">
+  <div>
 
         <fd-alert dismissible>
-          Happy building! 🚀
+            <h3>Happy building! 🚀</h3>
         </fd-alert>
 
   </div>

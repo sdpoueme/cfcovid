@@ -1,25 +1,32 @@
 <template>
-    <div>
-        <vs-navbar v-model="activeItem" class="nabarx">
+    <div class="centerx">
+        <vs-navbar
+                v-model="indexActive"
+                :color="colorx"
+                text-color="rgb(255,255,255)"
+                active-text-color="rgb(255,255,255)"
+                class="myNavbar">
             <div slot="title">
                 <vs-navbar-title>
-                  {{ city }}
+                    <h3> {{ country }} Fights Covid</h3>
                 </vs-navbar-title>
             </div>
 
             <vs-navbar-item index="0">
-                <router-link to="/">What is coronavirus?</router-link>
+                <router-link to="/"><h1>What is coronavirus?</h1></router-link>
             </vs-navbar-item>
             <vs-navbar-item index="1">
-                <router-link to="/">Am I at risk?</router-link>
+                <router-link to="/"><h1>Am I at risk?</h1></router-link>
             </vs-navbar-item>
             <vs-navbar-item index="2">
-                <router-link to="/">Public Alerts</router-link>
+                <router-link to="/"><h1>Public Alerts</h1></router-link>
             </vs-navbar-item>
 
             <vs-navbar-item index="3">
-                <fd-link href="https://twitter.com/i/events/1219057585707315201">#covid19</fd-link>
+
+             <a href="https://twitter.com/i/events/1219057585707315201"><h1>#covid19</h1></a>
             </vs-navbar-item>
+
         </vs-navbar>
 
         <router-view/>
@@ -27,7 +34,7 @@
         <fd-panel>
 
             <v-footer absolute>
-              My current address > <fd-link href="#"> {{ address }} </fd-link>
+                <h3> Your city: {{ city }}</h3><v-spacer> </v-spacer> <h3>Your What3Words address: {{ address  }}</h3>
 
             </v-footer>
         </fd-panel>
@@ -42,13 +49,22 @@
     name: 'App',
     data: () => ({
       activeItem: 0,
+      colorx:'#4285F4',
       location: [],
       city:"Yaounde",
       address:"x.y.z",
+      country: "Cameroon"
     }),
   };
 </script>
-<style scope>
-    { fontSize: 20pxs }
-</style>
 
+<style lang="stylus" scoped>
+    .input-color
+        margin-bottom 10px
+        position relative
+        display block
+    .myNavbar
+        color rgb(255,255,255)
+
+
+</style>
