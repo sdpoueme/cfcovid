@@ -8,23 +8,23 @@
                 class="myNavbar">
             <div slot="title">
                 <vs-navbar-title>
-                    <h3> {{ country }} Fights Covid</h3>
+                    <h1> {{ country }} Fights Covid</h1>
                 </vs-navbar-title>
             </div>
 
             <vs-navbar-item index="0">
-                <router-link to="/"><h1>What is coronavirus?</h1></router-link>
+                <router-link to="/"><h2>Am I at risk?</h2></router-link>
             </vs-navbar-item>
             <vs-navbar-item index="1">
-                <router-link to="/"><h1>Am I at risk?</h1></router-link>
+                <router-link to="/"><h2>1510 Emergency Center</h2></router-link>
             </vs-navbar-item>
             <vs-navbar-item index="2">
-                <router-link to="/"><h1>Public Alerts</h1></router-link>
+                <router-link to="/"><h2>Alerts</h2></router-link>
             </vs-navbar-item>
 
             <vs-navbar-item index="3">
 
-             <a href="https://twitter.com/i/events/1219057585707315201"><h1>#covid19</h1></a>
+             <a href="https://twitter.com/i/events/1219057585707315201"><h2>#covid19</h2></a>
             </vs-navbar-item>
 
         </vs-navbar>

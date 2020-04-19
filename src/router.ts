@@ -17,8 +17,8 @@ export default new Router({
       name: "assessment",
     },
     {
-      path: "/faq",
-      name: "faq",
+      path: "/contact",
+      name: "contact",
     },
     {
       path: "/alerts",

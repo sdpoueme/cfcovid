@@ -18,75 +18,97 @@
 
   @Component
   export default class Stats extends Vue {
-      @Prop() private num_confirmed_raw_csv!: string;
-      @Prop() private num_deaths_raw_csv!: string;
-      @Prop() private num_testing_raw_csv!: string;
-      @Prop() private num_recovered_raw_csv!: string;
       @Prop() private current_confirmed!: string;
       @Prop() private current_testing!: string;
       @Prop() private current_deaths!: string;
       @Prop() private current_recovered!: string;
       @Prop() private country!: string
       @Prop() private stat_day!: string
-    mounted () {
+      @Prop() private covid_confirmed_global!: string;
+      @Prop() private covid_deaths_global!: string;
+      @Prop() private covid_recovered_global!: string;
+      @Prop() private covid_testing_global!: string;
+
+      mounted () {
 
         var today = new Date();
         var day_sta=(today.getMonth()+1)+'/'+(today.getDate()-1)+'/'+today.getFullYear().toString().substr(-2);
+        var previous_day_sta=(today.getMonth()+1)+'/'+(today.getDate()-2)+'/'+today.getFullYear().toString().substr(-2);
         this.stat_day=day_sta;
 
-        axios.get('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv').then((response) => {
-
-          this.country='Cameroon';
-          const Papa = require('papaparse');
+          //this.country='Cameroon';
+          axios.get('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv').then((response) => {
 
 
-          var raw_metrics = Papa.parse(response.data,{delimiter:",", header: true}).data;
-
-          var metrics=raw_metrics.find((stat:any) => stat["Country/Region"] == this.country)
-
-          this.current_confirmed=metrics[day_sta]
-          this.num_confirmed_raw_csv=metrics
+              this.covid_confirmed_global=response.data;
+              let Papa = require('papaparse');
 
 
-      }).catch(error => { console.log(error) });
+              let raw_metrics = Papa.parse(this.covid_confirmed_global,{delimiter:",", header: true}).data;
 
-        axios.get('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv').then((response) => {
+              let metrics=raw_metrics.find((stat:any) => stat["Country/Region"] == this.country);
 
-            this.country='Cameroon';
-            const Papa = require('papaparse');
-            var today = new Date();
-            var day_sta=(today.getMonth()+1)+'/'+(today.getDate()-1)+'/'+today.getFullYear().toString().substr(-2);
+              if(!metrics[day_sta])
+              {
 
-
-            var raw_metrics = Papa.parse(response.data,{delimiter:",", header: true}).data;
-
-            var metrics=raw_metrics.find((stat:any) => stat["Country/Region"] == this.country)
-
-            this.current_deaths=metrics[day_sta]
-            this.num_deaths_raw_csv=metrics
+                  this.current_confirmed=metrics[previous_day_sta];
+              }
+              else
+              {
+                  this.current_confirmed=metrics[day_sta];
+              }
 
 
-        }).catch(error => { console.log(error) })
+          }).catch(error => { console.log(error) });
 
-        axios.get('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv').then((response) => {
+          axios.get('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv').then((response) => {
 
-            this.country='Cameroon';
-            const Papa = require('papaparse');
-            var today = new Date();
-            var day_sta=(today.getMonth()+1)+'/'+(today.getDate()-1)+'/'+today.getFullYear().toString().substr(-2);
+              this.covid_deaths_global=response.data;
+
+              let Papa = require('papaparse');
+
+              let raw_metrics = Papa.parse(this.covid_deaths_global,{delimiter:",", header: true}).data;
+
+              let metrics=raw_metrics.find((stat:any) => stat["Country/Region"] == this.country);
+
+              if(!metrics[day_sta])
+              {
+
+                  this.current_deaths=metrics[previous_day_sta];
+              }
+              else
+              {
+                  this.current_deaths=metrics[day_sta];
+              }
 
 
-            var raw_metrics = Papa.parse(response.data,{delimiter:",", header: true}).data;
+          }).catch(error => { console.log(error) })
 
-            var metrics=raw_metrics.find((stat:any) => stat["Country/Region"] == this.country)
+          axios.get('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv').then((response) => {
 
-            this.current_recovered=metrics[day_sta]
-            this.num_recovered_raw_csv=metrics
+              this.covid_recovered_global=response.data;
+              let Papa = require('papaparse');
+
+              let raw_metrics = Papa.parse(this.covid_recovered_global,{delimiter:",", header: true}).data;
+
+              let metrics=raw_metrics.find((stat:any) => stat["Country/Region"] == this.country);
+
+              if(!metrics[day_sta])
+              {
+
+                  this.current_recovered=metrics[previous_day_sta];
+              }
+              else
+              {
+                  this.current_recovered=metrics[day_sta];
+              }
 
 
-        }).catch(error => { console.log(error) })
+          }).catch(error => { console.log(error) })
 
-        this.current_testing='Not Available';
+          this.current_testing='Not Available';
+
+
     }
   }
 </script>
