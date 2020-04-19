@@ -2,9 +2,8 @@
     <v-container fluid>
 
         <div v-for="alert in public_alerts" :key="alert.title">
-            <fd-alert :type="alert.type">
+            <fd-alert :type="alert.type" dismissible="false">
                 <h3>{{ alert.title }}</h3>
-                <h4>{{ alert.message }}</h4>
             </fd-alert>
             <br />
 
