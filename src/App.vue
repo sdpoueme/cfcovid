@@ -14,11 +14,11 @@
             </div>
 
             <vs-navbar-item index="0">
-                <a href="https://covidpgghftlnx42d6.sjc1.qualtrics.com/jfe/form/SV_eV8gBT2UpyvtAu9"><h2>Am I at risk?</h2></a>
+                <a :href="selfsurvey"><h2>Am I at risk?</h2></a>
             </vs-navbar-item>
 
             <vs-navbar-item index="3">
-             <a href="http://covid19.minsante.cm/actualites"><h2>More infos</h2></a>
+             <a :href="medias"><h2>More infos</h2></a>
             </vs-navbar-item>
 
         </vs-navbar>
@@ -52,7 +52,9 @@
       city:"",
       address: "musical.ouverture.create",
       map:"https://what3words.com/musical.overture.create",
-      country: "Cameroon"
+      country: "Cameroon",
+      medias: "http://covid19.minsante.cm/actualites",
+      selfsurvey: "https://covidpgghftlnx42d6.sjc1.qualtrics.com/jfe/form/SV_eV8gBT2UpyvtAu9"
     }),
   };
 </script>
