@@ -1,4 +1,5 @@
 <template>
+    <v-container fluid>
     <div class="centerx">
         <vs-navbar
                 v-model="indexActive"
@@ -40,6 +41,8 @@
         </fd-panel>
 
     </div>
+
+    </v-container>
 
 </template>
 
