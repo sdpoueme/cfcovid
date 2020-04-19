@@ -5,4 +5,4 @@ Code repository for http://cameroon-fights.covid.org - a public information page
 https://projects.invisionapp.com/freehand/document/qA7X5Dph6
 
 # screenshot
-()[!cfcovid_landing_page.png]
+()[cfcovid_landing_page.png]
