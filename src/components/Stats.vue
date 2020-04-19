@@ -6,6 +6,7 @@
       <h2> Total Deaths  <fd-badge filled type="error"> {{ current_deaths }} </fd-badge> </h2>
       <h2> Total Recovered  <fd-badge filled type="success"> {{ current_recovered }} </fd-badge> </h2>
       <h2> Total Tests Performed  <fd-badge filled> {{ current_testing }} </fd-badge> </h2>
+      <h2> Case-Fatality Ratio  <fd-badge filled> {{ ((Number(current_deaths)/(Number(current_confirmed)+Number(current_recovered))*100)).toFixed(2)  }}% </fd-badge> </h2>
       * Source Data from <fd-link href="https://github.com/CSSEGISandData/COVID-19">Novel Coronavirus (COVID-19) Cases / JHU CSSE</fd-link> - {{ stat_day }} daily report
 
   </div>
@@ -107,6 +108,8 @@
           }).catch(error => { console.log(error) })
 
           this.current_testing='Not Available';
+
+
 
 
     }
