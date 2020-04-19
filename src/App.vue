@@ -33,8 +33,7 @@
        <fd-panel>
 
             <v-footer absolute>
-                <h3> Your city: {{ city }}</h3><v-spacer> </v-spacer> <h3>Your What3Words address: {{ address  }}</h3>
-
+                <h4>Use your 3 words address to get emergency assistance: <a :href="map" target="_blank">{{ address }}</a> </h4>
             </v-footer>
         </fd-panel>
 
@@ -52,7 +51,8 @@
       colorx:'#4285F4',
       location: [],
       city:"Yaounde",
-      address:"x.y.z",
+      address: "musical.ouverture.create",
+      map:"https://what3words.com/musical.overture.create",
       country: "Cameroon"
     }),
   };
