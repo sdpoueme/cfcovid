@@ -8,10 +8,8 @@
                         <Stats country="Cameroon"/>
                     </fd-panel>
                     <fd-panel>
-                        <fd-panel>
                             <h1>Cases Evolution</h1>
                             <TrendGraphs/>
-                        </fd-panel>
                     </fd-panel>
                 </fd-panel-grid>
 

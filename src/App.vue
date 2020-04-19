@@ -1,6 +1,5 @@
 <template>
-    <v-container fluid>
-        <v-col>
+
     <div class="centerx">
      <vs-navbar
                 v-model="indexActive"
@@ -15,19 +14,24 @@
             </div>
 
             <vs-navbar-item index="0">
-                <router-link to="/"><h2>Am I at risk?</h2></router-link>
+                <a href to="https://ee.humanitarianresponse.info/x/#T1SgsyZM"><h2>Am I at risk?</h2></a>
             </vs-navbar-item>
             <vs-navbar-item index="1">
-                <router-link to="/"><h2>1510 Emergency Center</h2></router-link>
+                <router-link to="/"><h2>Emergency Contact</h2></router-link>
             </vs-navbar-item>
 
             <vs-navbar-item index="3">
-             <a href="https://twitter.com/i/events/1219057585707315201"><h2>#covid19</h2></a>
+             <a href="http://covid19.minsante.cm/"><h2>#covid19</h2></a>
             </vs-navbar-item>
 
         </vs-navbar>
+        <v-container fluid>
+            <v-col>
 
         <router-view/>
+            </v-col>
+
+        </v-container>
 
        <fd-panel>
 
@@ -38,9 +42,7 @@
         </fd-panel>
 
     </div>
-        </v-col>
 
-    </v-container>
 
 </template>
 

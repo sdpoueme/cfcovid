@@ -1,10 +1,14 @@
 <template>
     <v-container fluid>
 
-        <fd-alert dismissible>
-            <h3>Happy building! 🚀</h3>
-        </fd-alert>
+        <div v-for="alert in public_alerts" :key="alert.title">
+            <fd-alert :type="alert.type">
+                <h3>{{ alert.title }}</h3>
+                <h4>{{ alert.message }}</h4>
+            </fd-alert>
+            <br />
 
+        </div>
         </v-container>
 </template>
 
@@ -15,15 +19,16 @@
   @Component
   export default class News extends Vue {
 
+      @Prop() private public_alerts!:object;
 
-    /*mounted () {
+      mounted() {
+          axios.get('https://raw.githubusercontent.com/sdpoueme/cfcovid/master/data/alerts.json').then((response) => {
 
-      axios.get('https://solinas-api.c4core.c.eu-nl-1.cloud.sap:5000/api/v1/customers').then((response) => {
-        console.log(response)
-        this.customers = response.data.customers
-        this.loadingProgress = 'false'
-        this.customerCount = this.customers.length
-      }).catch(error => { console.log(error) })
-    }*/
+              this.public_alerts = response.data;
+          }).catch(error => {
+              console.log(error)
+          })
+
+      }
   }
 </script>
