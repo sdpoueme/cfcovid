@@ -1,7 +1,8 @@
 <template>
     <v-container fluid>
+        <v-col>
     <div class="centerx">
-        <vs-navbar
+     <vs-navbar
                 v-model="indexActive"
                 :color="colorx"
                 text-color="rgb(255,255,255)"
@@ -32,7 +33,7 @@
 
         <router-view/>
 
-        <fd-panel>
+       <fd-panel>
 
             <v-footer absolute>
                 <h3> Your city: {{ city }}</h3><v-spacer> </v-spacer> <h3>Your What3Words address: {{ address  }}</h3>
@@ -41,6 +42,7 @@
         </fd-panel>
 
     </div>
+        </v-col>
 
     </v-container>
 

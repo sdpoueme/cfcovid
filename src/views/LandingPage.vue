@@ -16,7 +16,7 @@
                 </fd-panel-grid>
 
                 <fd-panel>
-                    <h1>Latest News </h1>
+                    <h1>Public Alerts </h1>
                     <News/>
                 </fd-panel>
 

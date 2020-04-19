@@ -1,11 +1,11 @@
 <template>
-  <div>
+    <v-container fluid>
 
         <fd-alert dismissible>
             <h3>Happy building! 🚀</h3>
         </fd-alert>
 
-  </div>
+        </v-container>
 </template>
 
 <script lang="ts">

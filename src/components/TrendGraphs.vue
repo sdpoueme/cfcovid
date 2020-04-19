@@ -1,9 +1,9 @@
 
 <template>
 
-    <div>
+    <v-container fluid>
         <line-chart  :colors="['orange','green','#b00']" :curve="true" :data="[{name:'Confirmed Cases',data: confirmed_metrics},{name: 'Recovered Cases',data: recovered_metrics}, {name: 'Deaths',data: deaths_metrics }]" :legend="true" xtitle="Date" ytitle="Number of Cases"/>
-    </div>
+    </v-container>
 
 </template>
 
