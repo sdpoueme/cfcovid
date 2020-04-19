@@ -26,7 +26,7 @@
         @Prop() private deaths_dataset!:object;
         @Prop() private deaths_labels!:object;
         @Prop() private deaths_metrics!:object;
-        @Prop() private country="Cameroon";
+        @Prop() private country!:string;
 
 
 

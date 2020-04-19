@@ -49,7 +49,7 @@
       activeItem: 0,
       colorx:'#4285F4',
       location: [],
-      city:"Yaounde",
+      city:"",
       address: "musical.ouverture.create",
       map:"https://what3words.com/musical.overture.create",
       country: "Cameroon"

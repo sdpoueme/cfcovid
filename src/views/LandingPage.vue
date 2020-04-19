@@ -9,7 +9,7 @@
                     </fd-panel>
                     <fd-panel>
                             <h1>Cases Evolution</h1>
-                            <TrendGraphs/>
+                            <TrendGraphs country="Cameroon"/>
                     </fd-panel>
                 </fd-panel-grid>
 
@@ -38,6 +38,8 @@
         },
     })
     export default class LandingPage extends Vue {
+
+
 
     }
 </script>
