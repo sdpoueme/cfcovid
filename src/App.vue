@@ -31,7 +31,6 @@
         </v-container>
 
        <fd-panel>
-
             <v-footer absolute>
                 <h4>Use your 3 words address to get emergency assistance: <a :href="map" target="_blank">{{ address }}</a> </h4>
             </v-footer>
