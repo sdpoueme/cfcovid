@@ -4,6 +4,7 @@
         <div v-for="alert in public_alerts" :key="alert.title">
             <fd-alert :type="alert.type" dismissible="false">
                 <h3>{{ alert.title }}</h3>
+                {{ alert.message }}
             </fd-alert>
             <br />
 
