@@ -14,14 +14,11 @@
             </div>
 
             <vs-navbar-item index="0">
-                <a href to="https://ee.humanitarianresponse.info/x/#T1SgsyZM"><h2>Am I at risk?</h2></a>
-            </vs-navbar-item>
-            <vs-navbar-item index="1">
-                <router-link to="/"><h2>Emergency Contact</h2></router-link>
+                <a href="https://ee.humanitarianresponse.info/x/#T1SgsyZM"><h2>Am I at risk?</h2></a>
             </vs-navbar-item>
 
             <vs-navbar-item index="3">
-             <a href="http://covid19.minsante.cm/"><h2>#covid19</h2></a>
+             <a href="http://covid19.minsante.cm/"><h2>More infos</h2></a>
             </vs-navbar-item>
 
         </vs-navbar>

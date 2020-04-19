@@ -12,17 +12,5 @@ export default new Router({
       name: "landingpage",
       component: LandingPage,
     },
-    {
-      path: "/test",
-      name: "assessment",
-    },
-    {
-      path: "/contact",
-      name: "contact",
-    },
-    {
-      path: "/alerts",
-      name: "alerts",
-    },
   ],
 });
