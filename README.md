@@ -3,3 +3,6 @@ Code repository for http://cameroon-fights.covid.org - a public information page
 
 # sketch
 https://projects.invisionapp.com/freehand/document/qA7X5Dph6
+
+# screenshot
+()[!cfcovid_landing_page.png]
