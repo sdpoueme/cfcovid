@@ -17,7 +17,7 @@
                 <a :href="selfsurvey"><h2>Am I at risk?</h2></a>
             </vs-navbar-item>
 
-            <vs-navbar-item index="3">
+            <vs-navbar-item index="1">
              <a :href="medias"><h2>More infos</h2></a>
             </vs-navbar-item>
 
