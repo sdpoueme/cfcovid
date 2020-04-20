@@ -6,3 +6,15 @@ https://projects.invisionapp.com/freehand/document/qA7X5Dph6
 
 # Demo Screen
 ![](cfcovid_landing_page.png)
+
+# How to run
+
+## Locally
+* npm install
+* npm run serve
+
+## On k8s
+* docker build -t <repo>:<tag> .
+* docker push <repo>:<tag>
+* kubectl apply -f cfcovid.yml
+
