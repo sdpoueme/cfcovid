@@ -1,5 +1,10 @@
 [
   {
+    "title": "Wearing of masks",
+    "message": "The government has imposed the wearing of masks as a mandatory measure to curb the progression of the novel coronavirus.",
+    "type": "info"
+  },
+  {
     "title": "Public Health Recommendations",
     "message": "Public is urged to strictly observe the hygiene measures recommended by the World Health Organization, including regular hand washing with soap, avoiding close contact such as shaking hands or hugging, and covering the mouth when sneezing.",
     "type": "error"
