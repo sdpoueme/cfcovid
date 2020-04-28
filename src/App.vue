@@ -1,4 +1,5 @@
 <template>
+    <v-container fluid>
 
     <div class="centerx">
      <vs-navbar
@@ -14,21 +15,21 @@
             </div>
 
             <vs-navbar-item index="0">
-                <a :href="selfsurvey"><h2>Am I at risk?</h2></a>
+                <a :href="selfsurvey" target="_blank"><h2>Am I at risk?</h2></a>
             </vs-navbar-item>
 
             <vs-navbar-item index="1">
-             <a :href="medias"><h2>More infos</h2></a>
+             <a :href="medias" target="_blank"><h2>More infos</h2></a>
             </vs-navbar-item>
 
         </vs-navbar>
-        <v-container fluid>
+
             <v-col>
 
         <router-view/>
             </v-col>
 
-        </v-container>
+
 
        <fd-panel>
             <v-footer absolute>
@@ -37,7 +38,7 @@
         </fd-panel>
 
     </div>
-
+    </v-container>
 
 </template>
 

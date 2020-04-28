@@ -1,6 +1,6 @@
 <template>
     <div>
-        <fd-container fluid>
+
             <fd-panel>
                 <fd-panel-grid :col="2">
                     <fd-panel>
@@ -20,7 +20,7 @@
 
             </fd-panel>
 
-    </fd-container>
+
     </div>
 </template>
 
