@@ -1,4 +1,8 @@
 [
+  {"title": "Government Strategy",
+   "message": "The President of the Republic has decided to extend, for an additional period of 15 days, renewable if necessary, other measures taken on March 17, 2020, as part of the response against the COVID-19 pandemic."
+   "type": "error"
+  },
   {
     "title": "Wearing of masks",
     "message": "The government has imposed the wearing of masks as a mandatory measure to curb the progression of the novel coronavirus.",
@@ -27,7 +31,7 @@
   },
   {
     "title": "Bars & Restaurants",
-    "message": "Under the supervision of administrative authorities, bars, restaurants and entertainment spots will be systematically closed from 6 p.m.",
+    "message": "opening after 6 p.m. drinks, restaurants and places of leisure, with obligation for customers and users to respect the barrier measures, in particular the wearing of a face mask protection and social distancing",
     "type": "warning"
   },
   {
@@ -39,8 +43,12 @@
     "title": "Mobility",
     "message": "Urban and inter-urban travel should only be undertaken in cases of extreme necessity. Drivers of buses, taxis and motorbikes are urged to avoid overloading: law enforcement officers will ensure they comply.",
     "type": "warning"
-  }
-  ,
+  },
+  {
+    "title": "Public Transportations",
+    "message": "Lifting of measure reducing number passenger regulations in all transport shared by bus and taxis. Wearing a mask remaining mandatory and overloading prohibited."
+    "type": "warning"
+  },
   {
     "title": "Public Requisitions",
     "message": "Private health facilities, hotels and other lodging facilities, vehicles and specific equipment necessary for the implementation of the COVID-19 pandemic response plan in Cameroon may be requisitioned as required, by competent authorities.",
