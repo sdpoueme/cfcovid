@@ -1,7 +1,8 @@
 [
-  {"title": "Government Strategy",
-   "message": "The President of the Republic has decided to extend, for an additional period of 15 days, renewable if necessary, other measures taken on March 17, 2020, as part of the response against the COVID-19 pandemic.",
-   "type": "error"
+  {
+    "title": "Government Strategy",
+    "message": "The President of the Republic has decided to extend, for an additional period of 15 days, renewable if necessary, other measures taken on March 17, 2020, as part of the response against the COVID-19 pandemic.",
+    "type": "error"
   },
   {
     "title": "Wearing of masks",
