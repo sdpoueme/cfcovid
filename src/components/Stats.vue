@@ -33,8 +33,18 @@
       mounted () {
 
         var today = new Date();
-        var day_sta=(today.getMonth()+1)+'/'+(today.getDate()-1)+'/'+today.getFullYear().toString().substr(-2);
-        var previous_day_sta=(today.getMonth()+1)+'/'+(today.getDate()-2)+'/'+today.getFullYear().toString().substr(-2);
+
+        if(today.getDate()-2 <= 0)
+        {
+            var day_sta=(today.getMonth()+1)+'/'+(today.getDate())+'/'+today.getFullYear().toString().substr(-2);
+            var previous_day_sta=(today.getMonth()+1)+'/'+(today.getDate())+'/'+today.getFullYear().toString().substr(-2);
+
+        }
+        else {
+            var day_sta=(today.getMonth()+1)+'/'+(today.getDate()-1)+'/'+today.getFullYear().toString().substr(-2);
+            var previous_day_sta=(today.getMonth()+1)+'/'+(today.getDate()-2)+'/'+today.getFullYear().toString().substr(-2);
+        }
+
         this.stat_day=day_sta;
 
           //this.country='Cameroon';
