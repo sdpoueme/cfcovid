@@ -1,5 +1,5 @@
 # Description
-Code repository for http://cameroon-fights.covid.org - a public information page to help citizens of cameroon figthing covid19.
+Code repository for http://cameroon-fights.covid.org - a public information page to help citizens of cameroon get public information about covid19.
 The page features a self-assessment link, a reference to the official covid19 page at minsante.cm, stats, line charts and public alerts. 
 
 
