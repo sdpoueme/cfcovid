@@ -13,7 +13,7 @@
     "@types/chart.js": "^2.9.19",
     "@what3words/api": "^3.1.0",
     "apexcharts": "^3.18.1",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "chart.js": "^2.9.3",
     "core-js": "^3.6.4",
     "csvtojson": "^2.0.10",
