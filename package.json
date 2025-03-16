@@ -30,7 +30,7 @@
     "strip-ansi": "^6.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
-    "vue": "^2.6.11",
+    "vue": "^3.0.0",
     "vue-apexcharts": "^1.5.3",
     "vue-browser-geolocation": "^1.8.0",
     "vue-chartjs": "^3.5.0",
